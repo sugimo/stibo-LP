@@ -1,0 +1,88 @@
+/* all devices style
+---------------------------------------*/
+@import "compass";
+
+/* all */
+
+@media screen and (max-width: 799px) {
+  /* container */
+
+  .cstView{
+    padding:20px 0 0 0;
+  }
+
+  .cstOverview{
+    padding:20px 0 0 0;
+    background-image:url("../images/bg.png");
+    @include background-size(400px 400px);
+  }
+
+  .cstColor{
+    width:100%;
+    padding:20px 0 0 0;
+  }
+
+  .innerOverview{
+    background-image:url("../images/overview_sp.png");
+    @include background-size(450px 220px);
+    padding-bottom:220px;
+  }
+
+  .innerView{
+    background-image:url("../images/view_sp.png");
+    @include background-size(320px 265px);
+    padding-bottom:265px;
+  }
+
+  .innerColor{
+    background-image:url("../images/color_sp.png");
+    @include background-size(320px 140px);
+    padding-bottom:140px;
+    margin-bottom:80px;
+  }
+
+  .appWrap{
+    width:180px;
+    margin:0 auto;
+  }
+
+  .appIcon{
+    width:60px;
+    height:60px;
+    @include background-size(60px 60px);
+  }
+
+  .appIconL{
+    width:70px;
+    height:70px;
+    @include background-size(70px 70px);
+  }
+
+  .appName{
+    font-size:18px;
+  }
+
+  .appDetail{
+    font-size:12px;
+  }
+
+  .cstOverview .installBtn{
+    display:none;
+  }
+
+  /* HeadLine */
+
+  .h1l{
+    font-size:24px;
+  }
+
+  .pl{
+    text-align:center;
+    padding:0 15px 15px;
+  }
+
+  /* Footer */
+  .innerFooter{
+    width:300px;
+  }
+}

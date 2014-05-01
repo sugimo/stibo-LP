@@ -1,0 +1,124 @@
+/* all devices style
+---------------------------------------*/
+@import "compass";
+
+/* all */
+
+$base-fontcolor:#3c2305;
+$tp-fontcolor:rgba(0,0,0,0);
+
+body {
+  font-family:sans-serif;
+  font-size:12px;
+  line-height:1.4;
+  postion:relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 320px !important;
+  background-color: #fff;
+  color:$base-fontcolor;
+  -webkit-text-size-adjust: none;
+}
+
+a{
+  text-decoration:none;
+}
+
+/* container */
+.cstView{
+  width:100%;
+}
+
+.cstOverview{
+  width:100%;
+}
+
+.cstColor{
+  width:100%;
+  background-image:url("../images/bg.png");
+  @include background-size(400px 400px);
+}
+
+.innerOverview{
+  background-position:center bottom;
+  background-repeat:no-repeat;
+}
+
+.innerView{
+  background-position:center bottom;
+  background-repeat:no-repeat;
+}
+
+.innerColor{
+  background-position:center bottom;
+  background-repeat:no-repeat;
+}
+
+.appWrap{
+  margin-bottom:10px;
+  @include clearfix;
+}
+
+.appIcon{
+  margin-right:10px;
+  float:left;
+  background-image:url("../images/appIcon.png");
+}
+
+.appIconL{
+  margin-right:10px;
+  float:left;
+  background-image:url("../images/appIcon_shadow.png");
+}
+
+.appInfo{
+  float:left;
+}
+
+.appName{
+  color:$base-fontcolor;
+}
+
+.appDetail{
+  line-height:1.5;
+  color:$base-fontcolor;
+}
+
+.installBtn{
+  width:130px;
+  height:39px;
+  margin-top:10px;
+  color:$tp-fontcolor;
+  float:right;
+  background-image:url("../images/btnInstall.png");
+  @include background-size(130px 39px);
+}
+
+.cstOverview .installBtn{
+  display:none;
+}
+
+/* HeadLine */
+
+.h1l{
+  text-align:center;
+  margin-bottom:5px;
+  clear:both;
+}
+
+/* Footer */
+.footer{
+  width:100%;
+  position:fixed;
+  bottom:0;
+  left:0;
+  padding:10px;
+  box-sizing:border-box;
+  background-color:#fff;
+  border-top:1px solid #eee;
+  border-bottom:1px solid #eee;
+}
+.innerFooter{
+  margin:0 auto;
+}
